@@ -39,6 +39,7 @@
     top: 470px;
     left: 600px;
    
+
 }
 .tile:nth-child(8){
     top: 470px;
@@ -48,4 +49,23 @@
     top: 470px;
     left: 1020px;
 }
- 
+
+ .R{
+    width: 100px;
+    height: 100px;
+    float:left;
+ }
+ .bloem{
+    width: 100px;
+    height: 100px;
+    float: right;
+ }
+ .vogel{
+    width: 200px;
+    height: 200px;
+ }
+ .letter-A{
+    font-size: 30pt;
+    text-align: center;
+
+ }
