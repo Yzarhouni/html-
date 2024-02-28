@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/forms.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost:3020/message" method="post">
+        <fieldset>
+            <legend>Voer wat in:</legend>
+
+            <label for="name">firstname=</label>
+            <input type="text" id="name" name="name" value="Voer uw naam in">
+
+            <label for="mail">mail: </label>
+            <input type="email" id="mail" name="mail">
+            <br><br>
+            <label for="message">Message:</label><br>
+            <textarea name="message" id="message" cols="80" rows="10">hi,
+            </textarea>
+
+            <button class="send-button">Go Go</button>
+            </li>
+            </ul>
+        </fieldset>
+    </form>
+
+    <form action="my-form-handler" method="post">
+        <fieldset>
+            <legend>Kies een lekker stukje fruit uit</legend>
+            <div>
+                <input type="radio" name="fruit" value="banaan" checked />
+                <label for="banaan">banaan</label>
+            </div>
+            <div>
+                <input type="radio" id="appel" name="fruit" value="appel" />
+                <label for="appel">appel</label>
+            </div>
+            <div>
+                <input type="radio" id="citroen" name="fruit" value="citroen" />
+                <label for="citroen">citroen</label>
+            </div>
+        </fieldset>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+</html>
