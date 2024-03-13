@@ -1,33 +1,91 @@
-.parent {
-    width: 500px;
-    border: 1px solid red;
-    margin: auto;
-    text-align: center;
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    gap: 5px;
+    grid-auto-flow: dense;
+}
+.orange{
+    background-color: rgba(255,165,0,0.4);
+    border: 2px solid rgb(255,165,0);
 }
 
-.child {
-    border-radius: 10%;
-    width: 100px;
-    height: 100px;
-    margin: 20px;
+.red{
+    background-color: rgba(255,0,0,0.4);
+    border: 2px solid rgb(255,0,0);
+}
+.green{
+    background-color: rgba(0,255,0,0.4);
+    border: 2px solid rgba(0,255,0);
+}
+.blue{
+    background-color: rgba(0,0,255,0.4);
+    border: 2px solid rgb(0,255,0);
 }
 
-.one{
-    background-color: powderblue;
-    position: absolute;
-    top: 50px;
-    
+.grey{
+    background-color: rgba(150,150,150,0.4);
+    border: 2px solid rgb(150,150,150);
 }
 
-.two{
-    background-color: lightgreen;
-   
+.box{
+    background-color: rgba(255, 192, 203);
+    border: 2px solid rgb(216, 112, 147)
 }
 
-.three{
-    background-color: sienna;
-}
+.hr1{grid-row:span 1;}
+.hr2{grid-row:span 2;}
+.hr3{grid-row:span 3;}
+.hr4{grid-row:span 4;}
+.hr5{grid-row:span 5;}
+.hr6{grid-row:span 6;}
+.hr7{grid-row:span 7;}
+.hr8{grid-row:span 8;}
+.hr9{grid-row:span 9; }
+.hr10{grid-row:span 10; }
 
-.four{
-    background-color: slateblue;
+
+.xs1 {grid-column: span 1;}
+.xs2 {grid-column: span 2;}
+.xs3 {grid-column: span 3;}
+.xs4 {grid-column: span 4;}
+.xs5 {grid-column: span 5;}
+.xs6 {grid-column: span 6;}
+.xs7 {grid-column: span 7;}
+.xs8 {grid-column: span 8;}
+.xs9 {grid-column: span 9;}
+.xs10 {grid-column: span 10;}
+.xs11 {grid-column: span 11;}
+.xs12 {grid-column: span 12;}
+
+@media (min-width: 708px){
+.nd1 { grid-column: span 1;}
+.nd2 { grid-column: span 1;}
+.n3 { grid-column: span 2;}
+.nd4 { grid-column: span 4;}
+.nd5 { grid-column: span 5;}
+.nd6 { grid-column: span 6;}
+.nd7 { grid-column: span 7;}
+.nd8 { grid-column: span 8;}
+.nd9 { grid-column: span 9;}
+.nd10 { grid-column: span 10;}
+.nd11 { grid-column: span 11;}
+.nd12{ grid-column: span 12;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
