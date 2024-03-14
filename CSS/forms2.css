@@ -1,10 +1,15 @@
 .grid-container{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-auto-rows: minmax(100px,auto);
+    grid-auto-rows: minmax(50px,auto);
     gap: 5px;
     grid-auto-flow: dense;
 }
+.box{
+        background-color: rgba(255, 192, 203);
+        border: 2px solid rgb(216, 112, 147)
+}
+
 .orange{
     background-color: rgba(255,165,0,0.4);
     border: 2px solid rgb(255,165,0);
@@ -28,22 +33,17 @@
     border: 2px solid rgb(150,150,150);
 }
 
-.box{
-    background-color: rgba(255, 192, 203);
-    border: 2px solid rgb(216, 112, 147)
-}
 
-.hr1{grid-row:span 1;}
-.hr2{grid-row:span 2;}
-.hr3{grid-row:span 3;}
-.hr4{grid-row:span 4;}
-.hr5{grid-row:span 5;}
-.hr6{grid-row:span 6;}
-.hr7{grid-row:span 7;}
-.hr8{grid-row:span 8;}
-.hr9{grid-row:span 9; }
-.hr10{grid-row:span 10; }
-
+.rh1{grid-row:span 1;}
+.rh2{grid-row:span 2;}
+.rh3{grid-row:span 3;}
+.rh4{grid-row:span 4;}
+.rh5{grid-row:span 5;}
+.rh6{grid-row:span 6;}
+.rh7{grid-row:span 7;}
+.rh8{grid-row:span 8;}
+.rh9{grid-row:span 9;}
+.rh10{grid-row:span 10;}
 
 .xs1 {grid-column: span 1;}
 .xs2 {grid-column: span 2;}
@@ -58,34 +58,22 @@
 .xs11 {grid-column: span 11;}
 .xs12 {grid-column: span 12;}
 
-@media (min-width: 768px){
-.nd1 { grid-column: span 1;}
-.nd2 { grid-column: span 1;}
-.nd3 { grid-column: span 2;}
-.nd4 { grid-column: span 4;}
-.nd5 { grid-column: span 5;}
-.nd6 { grid-column: span 6;}
-.nd7 { grid-column: span 7;}
-.nd8 { grid-column: span 8;}
-.nd9 { grid-column: span 9;}
-.nd10 { grid-column: span 10;}
-.nd11 { grid-column: span 11;}
-.nd12{ grid-column: span 12;}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+@media (min-width: 708px){
+.md1 { grid-column: span 1;}
+.md2 { grid-column: span 1;}
+.md3 { grid-column: span 2;}
+.md4 { grid-column: span 4;}
+.md5 { grid-column: span 5;}
+.md6 { grid-column: span 6;}
+.md7 { grid-column: span 7;}
+.md8 { grid-column: span 8;}
+.md9 { grid-column: span 9;}
+.md10 { grid-column: span 10;}
+.md11 { grid-column: span 11;}
+.md12{ grid-column: span 12;}
+.md13{ grid-column: span 13;}
+.md14{ grid-column: span 14;}
+.md15{ grid-column: span 15;}
+}    
